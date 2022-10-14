@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Decorations | The Artistic</title>
+     
+     <!-- cdnjs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <!-- bootstrap css -->
+      
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+     <!-- bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+     <!-- Swiper -->
+     <link
+      rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+      <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!-- aniamtion js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+     <!-- styling navbar swiper slider cards -->
+    <link rel="stylesheet" href="css/event.css">
+     
+    <!-- link picture -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
+    <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+      <!-- navbar short css start -->
+      <style>
+        .ssi:hover #h1{
+          opacity: 1;
+          
+        }
+      </style>
+  </head>
+  <body>
+     <header>
+      <div data-aos="zoom-in" class="nav">
+          <nav class="navbar navbar-expand-lg navbar-light bg-*" id="nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div  class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                         <a  class="nav-link active text-light" href="home.html">Home</a>
+                         </li>
+                         <li class="nav-item">
+                         <a style="width: 100%;" class="nav-link text-light" href="job.html">Contact for job</a>
+                         </li>
+                         <li class="nav-item">
+                           <a style="width: 100%;" class="nav-link text-light" href="ourservices.html">Our Services</a>
+                           </li>
+                             <li class="nav-item">
+                               <a style="width: 100%;" class="nav-link text-light" href="ourstory.html">Our Story</a>
+                               </li>
+                           <li class="nav-item">
+                             <a id="loginbutton" class="nav-link text-light" href="login.html">Login</a>
+                             </li>
+                     </ul>
+                    </div>
+               </div>
+          </nav>
+     </div>
+     <script>
+       AOS.init();
+  </script>
+  <!-- navbar js start -->
+  <script>
+    window.addEventListener("scroll",function(){
+        var nav = document.getElementById('nav');
+        var txt = document.getElementsByClassName('nav-link');
+        win = window.scrollY>0;
+        nav.classList.toggle('nav1',win);
+        for(i=0 ; i<txt.length ; i++){
+          txt[i].classList.toggle('text-dark',win)
+        }
+      })
+</script>
+    <!-- navbar js end -->
+         <!-- navbar end -->
+         <div data-aos="fade-right"
+         data-aos-duration= "1000" class="text-box">
+          <h1 id="ourservicesheading">Event Decorations</h1>
+        </div>
+        <img class="ourservicesimg"  src="images/eventbanner1.jpg" alt="">
+
+
+        <h2 data-aos="fade-right"
+        data-aos-duration="2000" id="dech2" style=" margin-top: 40%; padding-right: 26%;  text-align: center; font-size: 50px; font-weight: bolder;">Wedding decorations!</h2>
+          
+
+<div class="Cards">
+    <div data-aos="flip-left"
+    data-aos-duration="2000" class="card"  data-aos="flip-left">
+      <div class="imgBx" data-text="design">
+          <img src="images/weddingpak10.jpg.crdownload.jpg.crdownload.jpg.crdownload.jpg" height="100%" width="100%" alt="">
+      </div>
+      <div class="content">
+        <div class="detail">
+          <h3>Wedding Decoration</h3>
+          <p>A wedding ceremony is decorated with ornaments of different colors which makes it spectacular.</p>
+          <p><b>Price : 300$</b></p>
+          <a href="eventworker.html"><button id="button1" type="submit">Book Now</button></a>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div  data-aos="flip-left"
+    data-aos-duration="3000" class="card"  data-aos="flip-left">
+      <div class="imgBx" data-text="design">
+          <img src="images/weddingpak11.jpg.crdownload.png" height="100%" width="100%" alt="">
+      </div>
+      <div class="content">
+        <div class="detail">
+          <h3>Wedding Decoration</h3>
+          <p>A wedding ceremony is decorated with ornaments of different colors which makes it spectacular.</p>
+          <p><b>Price : 200$</b></p>
+          <a href="eventworker.html"><button id="button2" type="submit">Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="wedevent.html"><button class="btn">More Designs</button></a> 
+    
+
+
+
+<h2 data-aos="fade-right"
+data-aos-duration="2000" id="dech2" style=" margin-top: 16%; padding-right: 30%; text-align: center; font-size: 50px; font-weight: bolder;">Other Parties Decorations</h2>
+    
+
+
+
+     <div  data-aos="flip-left"
+     data-aos-duration="2000" class="card"  data-aos="flip-left">
+      <div class="imgBx" data-text="design">
+          <img src="images/party2.jpg" height="100%" width="100%" alt=""  >
+      </div>
+      <div class="content">
+        <div class="detail">
+          <h3>Other party Decoration</h3>
+          <p>Talking. It can feel like there should be some more exciting, glamorous answer, but parties mainly consist of people mingling and having conversations.</p>
+          <p><b>Price : 150$</b></p>
+          <a href="eventworker.html"><button id="button1" type="submit">Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="flip-left"
+    data-aos-duration="3000" class="card"  data-aos="flip-left">
+      <div class="imgBx" data-text="design">
+          <img src="images/party3.jpg" height="100%" width="100%"  alt="">
+      </div >
+      <div class="content">
+        <div class="detail">
+          <h3>Other Parties Decoration</h3>
+          <p>Talking. It can feel like there should be some more exciting, glamorous answer, but parties mainly consist of people mingling and having conversations.</p>
+          <p><b>Price : 160$</b></p>
+          <a href="eventworker.html"><button id="button1" type="submit">Book Now</button></a>
+        </div>
+      </div>
+    </div>  
+
+    <a href="party.html"><button class="btn">More Designs</button></a> 
+
+
+
+   
+
+
+
+</div>
+
+
+
+
+              <!-- Footer -->
+<footer data-aos="fade-up" class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div  class="container1">
+    <img class="logomain" src="images/logo.png" alt="">
+    <h1 class="h1">We work here too!</h1>
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-6">
+
+        <!--Image-->
+        <div data-aos="fade-up" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/TURKEY.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">TURKEY</div>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div data-aos="fade-up" data-aos-duration="500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/india.webp" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">INDIA</div>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div data-aos="fade-up" data-aos-duration="1000" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/japan.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">JAPAN</div>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!-- Image-->
+        <div data-aos="fade-up" data-aos-duration="1500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/canada.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">CANADA</div>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div data-aos="fade-up" data-aos-duration="2000" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/london.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">LONDON</div>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!-- Image -->
+        <div data-aos="fade-up" data-aos-duration="2500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/australia.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <div  class="text1">AUSTRALIA</div>
+         </div>
+         </div> 
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div id="ending" class=" text-center">© 2023 interior design and event planning website:  <a class="endweb" href="home.html"> The Artisitc.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+           <script>
+             AOS.init();
+           </script>
+   
+      </body>

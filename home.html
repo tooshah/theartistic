@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>The Artistic</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- aniamtion css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- aniamtion js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- styling css -->
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <!-- nav & slider start -->
+
+     <header data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+     <a class="brand" href="home.html"><img src="images/logo.png" alt=""></a>
+     <div class="menu-btn"></div>
+        <div class="navigation">
+        <div class="navigation-items">
+            <a href="home.html">Home</a>
+            <a href="job.html">Contact for job</a>
+            <a href="ourservices.html">Our Services</a>
+            <a href="ourstory.html">Our Story</a>
+            <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+    <section data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0" class="home">
+        <img class="video-slide active" src="images/slider1.jpg">
+        <img class="video-slide" src="images/slider2.jpg">
+        <img class="video-slide" src="images/slider3.jpg">
+        <img class="video-slide" src="images/slider4.jpeg">
+        <img class="video-slide" src="images/slider5.jpg">
+        <div class="content active">
+            <h1>we're here<br>For you <span></span> </h1>
+            <p> Quality Service is a top <br> happy clients, happy planner.</p>
+        </div>
+        <div class="content">
+            <h1> Home<br> <span>decoration</span> </h1>
+            <p>A beautiful truth I can believe in This great thing I know.</p>
+        </div>
+        <div class="content">
+            <h1>Events<br> <span>Management</span> </h1>
+            <p>Life is an Event make it memorable.</p>
+        </div>
+        <div class="content">
+            <h1>Office<br><span>Decorations</span> </h1>
+            <p>Helping you to archeive your goals.</p>
+        </div>
+        <div class="content">
+            <h1>Happy <br> <span>clients</span> </h1>
+            <p>Quality service is a top priority in this workforce.</p>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+
+      </div>
+        
+    </section>
+    <script type="text/javascript">
+    //javascript of responsive navigation menu//
+
+    const menuBtn = document.querySelector(".menu-btn"); 
+    const nav = document.querySelector(".navigation"); 
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+
+    //javascript for video slider navigation//
+
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        contents.forEach((content) => {
+            content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i);
+        });
+    });
+    </script>
+
+     <!-- description start -->
+     <div data-aos="fade-zoom-in"
+     data-aos-duration="1000" class="explanation "><h1 id="main">THE ARTISTIC</h1>
+      <p data-aos="fade-right"
+      data-aos-duration="2000" id="paragraph"></span> Where <span>event designs</span> & <span >interior Designs</span> Come Together!</span> </p>
+      <p data-aos="fade-right"
+      data-aos-duration="3000" id="second-paragraph">Our design service is the key to helping you achieve success in your pursuit of that perfect living space. 
+        Our design ensure that all the different elements of the event will combine perfectly and transmit coherence.
+        You will work with professional designers who have the formal education and practical experience needed to help you develop and execute a successful design plan. 
+        Our staff works as a team to insure no detail is overlooked.
+      </p>
+    </div>
+         <!-- description end -->
+
+   <!-- main cards start -->
+   <div style="text-align:center">
+    <h1 data-aos="fade-up"
+    data-aos-duration="1000" class="categories">OUR CATEGORIES FOR YOU !</h1>
+    <div class="extrawork">
+
+      <!-- first card -->
+      <div class="col-lg-6" style="display: flex;"><span  id="span1" class="dot1"><img data-aos="fade-up"
+        data-aos-duration="3000" src="images/home designs.jpg" alt=""></span>
+        <h1 data-aos="fade-right"
+        data-aos-duration="2500" class="span1extraheading" >HOME <span style="color: rgb(213, 139, 3);"> DESIGNS</span></h1>
+        <p data-aos="fade-right"
+        data-aos-duration="2000" class="span2para">Home interior design is the science of understanding behaviors to help property owners<br> create a functional room within a building, including the shapes of a room's walls, floors,<br> and more. A professional interior designer must understand interior architecture<br> and works closely with architects to design the interior space.
+        <br>
+          <a  class="a1" href="homedesigns.html"><button id="button">MORE DESIGNS</button></a></p> 
+      </div>
+   
+      <!-- second card -->
+      <div id="bottom1" class="col-lg-6" style="display: flex;"><span id="span1" class="dot1"><img data-aos="fade-up"
+        data-aos-duration="3000" src="images/office design.jpg" alt=""></span>
+        <h1 data-aos="fade-right"
+        -duration="2500" class="span1extraheading" >OFFICE <span style="color: rgb(213, 139, 3);"> DESIGNS</span></h1>
+        <p data-aos="fade-right"
+        data-aos-duration="2000" class="span2para">Office design is about creating a space that facilitates productive and purposeful work
+          while leaving room for creativity, customization, and personalization. Essentially,
+          you're setting a stage so everyone can bring their props.
+        <br>
+          <a class="a1" id="a1" href="officedesigns.html"><button id="button">MORE DESIGNS</button></a></p> 
+      </div>
+
+      <!-- third card -->
+      <div id="bottom" class="col-lg-6" style="display: flex;"><span id="span1" class="dot1"><img data-aos="fade-up"
+        data-aos-duration="3000" src="images/event designs.jpg" alt=""></span>
+        <h1 data-aos="fade-right"
+        -duration="2500" class="span1extraheading1" >EVENT <span style="color: rgb(213, 139, 3);"> DECORATIONS</span></h1>
+        <p data-aos="fade-right"
+        data-aos-duration="2000" class="span2para">Event planning, design and production within time limits. Working with clients to identify their needs and ensure customer satisfaction. Organizing facilities and details such as decor, catering, entertainment, transportation, location, invitee list, special guests, equipment, promotional material etc.
+        <br>
+          <a class="a1" id="a1" href="Events.html"><button id="button">MORE DESIGNS</button></a></p> 
+      </div>
+        <!-- animation js -->
+        <script>
+          AOS.init();
+        </script>
+
+        <!-- main cards end -->
+
+        <!-- recent projects start -->
+        <!-- interior designs start  -->
+<div class="mainhead">
+    <h1 data-aos="fade-right"
+    data-aos-duration="1000">RECENT PROJECTS !</h1>
+    <h2 data-aos="fade-right"
+    data-aos-duration="1500">HOME AND OFFICE DECORATIONS</h2>
+</div> 
+- <div style="display: flex;" id="row2" class="row row-cols-1 row-cols-md-3 g-4">
+   <div data-aos="fade-up"
+   data-aos-duration="1000" style="width: 30%;" class="col1">
+     <div class="card1">
+       <img src="images/decor4.jpg" class="card-img-top" alt="...">
+     </div>
+   </div>
+   <div data-aos="fade-up"
+   data-aos-duration="2000" style="width: 30%;" class="col2">
+     <div class="card2">
+       <img src="images/decor5.webp" class="card-img-top" alt="...">
+     </div>
+   </div>
+   <div data-aos="fade-up"
+   data-aos-duration="3000" style="width: 30%;" class="col3">
+     <div class="card3">
+       <img src="images/decor6.webp" class="card-img-top" alt="...">
+     </div>
+   </div>
+ </div>
+
+ <div style="display: flex;" id="row3" class="row row-cols-1 row-cols-md-3 g-4">
+   <div data-aos="fade-up"
+   data-aos-duration="1000" style="width: 30%;" class="col4">
+     <div class="card4">
+       <img src="images/decor7.jpg" class="card-img-top" alt="...">
+     </div>
+   </div>
+   <div data-aos="fade-up"
+   data-aos-duration="2000" style="width: 30%;" class="col5">
+     <div class="card5">
+       <img src="images/decor8.jpg" class="card-img-top" alt="...">
+     </div>
+   </div>
+   <div data-aos="fade-up"
+   data-aos-duration="3000" style="width: 30%;" class="col6">
+     <div class="card6">
+       <img src="images/decor9.webp" class="card-img-top" alt="...">
+     </div>
+   </div>
+ </div>
+  <!-- interior designs end -->
+
+<!-- event planning start -->
+ <div class="mainhead2">
+  <h2 data-aos="fade-right"
+  data-aos-duration="1500">EVENT PLANNING</h2>
+</div> 
+<div style="display: flex;" id="row2" class="row row-cols-1 row-cols-md-3 g-4">
+ <div data-aos="fade-up"
+ data-aos-duration="1000" style="width: 30%;" class="col1">
+   <div class="card1">
+     <img src="images/event10.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div data-aos="fade-up"
+ data-aos-duration="2000" style="width: 30%;" class="col2">
+   <div class="card2">
+     <img src="images/event11.webp" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div data-aos="fade-up"
+ data-aos-duration="3000" style="width: 30%;" class="col3">
+   <div class="card3">
+     <img src="images/event12.webp" class="card-img-top" alt="...">
+   </div>
+ </div>
+</div>
+
+<div style="display: flex;" id="row3" class="row row-cols-1 row-cols-md-3 g-4">
+ <div data-aos="fade-up"
+ data-aos-duration="1000" style="width: 30%;" class="col4">
+   <div class="card4">
+     <img src="images/event13.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div data-aos="fade-up"
+ data-aos-duration="2000" style="width: 30%;" class="col5">
+   <div class="card5">
+     <img src="images/event14.webp" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div data-aos="fade-up"
+ data-aos-duration="3000" style="width: 30%;" class="col6">
+   <div class="card6">
+     <img src="images/event15.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+</div>
+<!-- event planning end -->
+<!-- cards end -->
+
+<!-- second short details start -->
+
+<div class="textown" data-aos="fade-right" data-aos-duration="3000" class="col-lg-6">
+  <h1 class="ownevent">create your own events</h1>
+
+</div> 
+<div style="display: flex;" id="row5" class="row row-cols-1 row-cols-md-3 g-4">
+ <div data-aos="fade-down"
+ data-aos-easing="linear"
+ data-aos-duration="1500" style="width: 30%;" class="col">
+   <div class="card">
+     <img src="images/ownevent1.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div data-aos="fade-down"
+ data-aos-easing="linear"
+ data-aos-duration="1000" style="width: 30%;" class="col">
+   <div class="card">
+     <img src="images/ownevents2.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+ <div  data-aos="fade-down"
+ data-aos-easing="linear"
+ data-aos-duration="500" style="width: 30%;" class="col">
+   <div class="card">
+     <img src="images/ownevents3.jpg" class="card-img-top" alt="...">
+   </div>
+ </div>
+</div>
+
+ <a href="ownevent.html"><button href="ownevent.html" class="owneventbtn" >Create your event now!</button></a>
+    
+ <!-- next short details -->
+   <div class="col-lg-6" id="flex">
+  <img data-aos="fade-right"
+  data-aos-duration="1000" id="shortimg" src="images/young-beautiful-happy-asian-business-woman-with-smiley-face-is-holding-parcel-box_43518-322.jpg" alt="">
+  <div data-aos="fade-right"
+  data-aos-duration="2500" class="animate">  <h1 class="shortheading">We provide you the best experience.</h1>
+    <span data-aos="fade-right"
+    data-aos-duration="3000" id="shortpara"> You don't have to about the results because all these<br> interior designs
+      and event plannings made by people who are professional in their fields with and elegant and luxurious style.<br> We believe that smallest details can have a huge impact. 
+    We work collaboratively to ensure your event and interiors thoughtful.</span>
+  </div>
+</div>  
+<div id="flex1">
+  <h1 data-aos="fade-up"
+  data-aos-duration="1000" id="shortheading1">CONTACT FOR JOB
+  </h1>
+  <h2 data-aos="fade-right"
+  data-aos-duration="2000">Job Summary</h2>
+  <p data-aos="fade-right"
+  data-aos-duration="2500" id="shortpara1"> The Interior Designer will create functional, safe, and aesthetically pleasing spaces by assessing space requirements, determining optimal furniture placement, and selecting decorative items, all while adhering to relevant blueprint, building code, and inspection requirements. While event planner  are responsible for organizing and managing every aspect of an event. Their duties include conceptualizing theme ideas, planning budgets, booking venues, liaising with suppliers and clients, managing logistics, and presenting post-event reports.</p>
+<a href="job.html"><button data-aos="fade-right"
+  data-aos-duration="3000" class="apply">Apply Now</button></a>
+</div>
+
+   
+
+       <!-- footer start -->
+<!-- Footer -->
+<footer data-aos="fade-up" class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div  class="container1">
+    <a href="home.html"><img class="logomain" src="images/logo.png" alt=""></a>
+    <h1 class="h1">We work here too!</h1>
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-6">
+
+        <!--Image-->
+        <div  data-aos="fade-up"
+         id="image2" class="view overlay z-depth-1-half">
+          <img src="images/TURKEY.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="turkeylocate.html" class="text1">TURKEY</a>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div  data-aos="fade-up" data-aos-duration="500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/india.webp" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="indialocate.html" class="text1">INDIA</a>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div  data-aos="fade-up" data-aos-duration="1000"
+        id="image2" class="view overlay z-depth-1-half">
+          <img src="images/japan.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="japanlocate.html" class="text1">JAPAN</a>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!-- Image-->
+        <div  data-aos="fade-up" data-aos-duration="1500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/canada.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="canadalocate.html" class="text1">CANADA</a>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div  data-aos="fade-up" data-aos-duration="2000" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/london.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="londonlocate.html" class="text1">LONDON</a>
+         </div>
+         </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!-- Image -->
+        <div  data-aos="fade-up" data-aos-duration="2500" id="image2" class="view overlay z-depth-1-half">
+          <img src="images/australia.jpg" class="img-fluid"
+          alt="">          
+          <div class="middle1">
+           <a href="australialocate.html" class="text1">AUSTRALIA</a>
+         </div>
+         </div> 
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div id="ending" class=" text-center">© 2023 interior design and event planning website:  <a class="endweb" href="home.html"> The Artisitc.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+      <!-- animation js -->
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
